@@ -2,6 +2,7 @@ package com.mostdev.myfirstwebapp.Hello;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 //we have to tell spring this is a bean
@@ -17,6 +18,12 @@ public class sayHelloController {
     @RequestMapping("sayHello")
     public String sayHelloJSP() {
         return "sayHello";
+    }
+
+    @RequestMapping("/sayHello/test")
+    @ResponseBody
+    public String sayHelloJSPParameters(@RequestParam String id) {
+        return "id: " + id;
     }
 
 }
