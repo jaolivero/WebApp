@@ -2,14 +2,14 @@
    <head>
         <title> Web App</title>
    </head>
+
    <body>
+        <div class=container>
 
-       <h1>Welcome</h1>
+           <h1> ${greetings} ${name}</h1>
 
-       <h2>Your Name: ${name}</h2>
-       <div>
-          <a href="listTodos">Manage</a> your todos
-       </div>
-
+            <a href="listTodos">Manage</a> your todo
+        </div>
    </body>
+   
 </html>
