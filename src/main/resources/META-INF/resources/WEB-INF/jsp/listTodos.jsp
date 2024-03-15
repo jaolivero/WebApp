@@ -8,7 +8,7 @@
    </head>
    <body>
         <div class ="container">
-            <h1>Welcome${name}</h1>
+            <h1>Welcome ${name}</h1>
    <hr>
 
    <h2>Your Todos</h2>

@@ -36,6 +36,8 @@ public class LoginController {
            int hour = greetMSG.getHour();
            String message = greetMSG.greetings(hour);
 
+           name = name.substring(0, 1).toUpperCase() + name.substring(1);
+
             model.put("name", name);
             model.put("greetings", message);
 
