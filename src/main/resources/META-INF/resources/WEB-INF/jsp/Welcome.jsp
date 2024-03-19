@@ -8,7 +8,8 @@
 
            <h1> ${greetings} ${name}</h1>
 
-            <a href="listTodos">Manage</a> your todo
+            <a href="list-Todos">Manage</a> your todo
+
         </div>
    </body>
    
