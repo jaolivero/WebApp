@@ -19,15 +19,20 @@
               <th>Description</th>
               <th>Target Date</th>
               <th>Is Done?</th>
+              <th></th>
+              <th></th>
           </tr>
        </thead>
        <tbody>
             <c:forEach items="${todos}" var="todo">
                 <tr>
-                    <td>${todo.id}</td>
+
                     <td>${todo.description}</td>
                     <td>${todo.targetDate}</td>
                     <td>${todo.done}</td>
+                    <td><a href ="update-Todo?id=${todo.id}" class="btn btn-warning">UPDATE</a> </td>
+                    <td><a href ="delete-Todo?id=${todo.id}" class="btn btn-Danger">DELETE</a> </td>
+
                 </tr>
             </c:forEach>
         </tbody>
